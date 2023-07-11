@@ -4,8 +4,10 @@ import plotly.express as px
 
 app = Dash("__name__")
 
-osaa_storewise_analysis = pd.read_csv(r"D:\All Data\desktop\Osaa and Vaayu Data\Dash Report\src\store-wise-sales-osaa.csv")
-vaayu_storewise_analysis = pd.read_csv(r"D:\All Data\desktop\Osaa and Vaayu Data\Dash Report\src\store-wise-sales-vaayu.csv")
+server=app.server
+
+osaa_storewise_analysis = pd.read_csv(r"store-wise-sales-osaa.csv")
+vaayu_storewise_analysis = pd.read_csv(r"store-wise-sales-vaayu.csv")
 
 osaa_storewise_analysis.fillna("no data",inplace=True)
 vaayu_storewise_analysis.fillna("no data",inplace=True)
