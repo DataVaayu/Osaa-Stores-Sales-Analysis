@@ -19,7 +19,7 @@ app.layout = html.Div(children=[
              dcc.Dropdown(options=osaa_storewise_analysis.CATEGORY.unique(),value="LEHANGA",id="dropdown-1-2"),             
              dcc.Graph(id="figure-1-2")]),
     
-    html.Div([html.H1(children="1.2 Osaa Storewise Sales Analysis",style={"textalign":"center","color":"rgb(0,0,0)"}),
+    html.Div([html.H1(children="1.2 Drill Down by Choosing Any Set of Columns from Dropdown",style={"textalign":"center","color":"rgb(0,0,0)"}),
              dcc.Dropdown(options=osaa_storewise_analysis.columns,value=["STORE","Color"],id="dropdown-1",multi=True),
              dcc.Graph(id="figure-1")]),
     
